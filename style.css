@@ -1,122 +1,68 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     margin: 0;
-    padding: 0;
 }
 
 .container {
-    max-width: 700px;
-    margin: 50px auto;
-    padding: 20px;
     background: white;
+    padding: 30px;
     border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 400px;
 }
 
-h1 {
+h2 {
     text-align: center;
-    margin-bottom: 24px;
+    color: #333;
 }
 
-.timer {
-    font-size: 20px;
-    color: #d9534f; /* Bootstrap danger color */
-    text-align: center;
+.form-container {
     margin-bottom: 20px;
 }
 
-.question-container {
-    margin-bottom: 20px;
-}
-
-.options {
-    margin: 20px 0;
-}
-
-.option {
-    background-color: #e7e7e7;
-    border: none;
-    border-radius: 5px;
-    padding: 12px;
-    margin: 6px 0;
-    cursor: pointer;
+input {
     width: 100%;
-    text-align: left;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
     font-size: 16px;
-    transition: background-color 0.3s ease;
 }
 
-.option:hover {
-    background-color: #d4d4d4;
-}
-
-.option.selected {
-    background-color: #a2d5a2;
-}
-
-.option.wrong {
-    background-color: #f28b82;
-}
-
-.next-button,
-.restart-button {
-    background-color: #4CAF50;
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
     color: white;
     border: none;
-    border-radius: 5px;
-    padding: 14px 15px;
+    border-radius: 4px;
     cursor: pointer;
-    width: 100%;
-    font-size: 18px;
-    margin-top: 10px;
-    transition: background-color 0.3s ease;
+    font-size: 16px;
 }
 
-.next-button:disabled {
-    background-color: #ccc;
-    cursor: not-allowed;
+button:hover {
+    background-color: #0056b3;
 }
 
-.restart-button {
-    background-color: #f44336;
+.hidden {
+    display: none;
 }
 
-.next-button:hover:not(:disabled),
-.restart-button:hover {
-    background-color: #388e3c;
-}
-
-.review-container {
-    margin-top: 20px;
-    max-height: 400px;
-    overflow-y: auto;
-    border-top: 1px solid #ddd;
-    padding-top: 10px;
-}
-
-.review-item {
-    border-bottom: 1px solid #eee;
-    padding: 8px 0;
-}
-
-.review-question {
-    font-weight: 600;
-    margin-bottom: 6px;
-}
-
-.correct-answer {
-    color: #4CAF50;
-}
-
-.user-answer {
-    font-style: italic;
-}
-
-.score-percentage {
-    font-weight: 700;
-    margin: 10px 0 0 0;
+p {
     text-align: center;
-    font-size: 20px;
-    color: #333;
+    color: #666;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
