@@ -342,7 +342,7 @@ let score = 0;
 let userAnswers = [];
 let answeredQuestions = [];
 let timer; // Timer variable
-let timeLeft = .5* 60; // 30 minutes in seconds
+let timeLeft = 20* 60; // 30 minutes in seconds
 
 const questionElement = document.getElementById('question');
 const optionsElement = document.getElementById('options');
